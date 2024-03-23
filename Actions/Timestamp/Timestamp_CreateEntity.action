@@ -1,0 +1,16 @@
+{
+    "CreateLinks": [],
+    "OnFailure": "/n4/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/n4/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "timestamp": "#Control:timestamp/#Value"
+    },
+    "Target": {
+        "EntitySet": "Timestamp",
+        "Service": "/n4/Services/ajayurl.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateEntity"
+}

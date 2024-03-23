@@ -1,0 +1,6 @@
+{
+    "ModalPageFullscreen": false,
+    "ModalPage": true,
+    "PageToOpen": "/n4/Pages/Timestamp/Timestamp_Create.page",
+    "_Type": "Action.Type.Navigation"
+}

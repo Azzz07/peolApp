@@ -1,0 +1,6 @@
+{
+    "ModalPageFullscreen": false,
+    "ModalPage": true,
+    "PageToOpen": "/n4/Pages/supplier_replay/supplier_replay_Create.page",
+    "_Type": "Action.Type.Navigation"
+}

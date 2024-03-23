@@ -1,0 +1,96 @@
+{
+	"Caption": "Supplier_bid_table Detail",
+	"DesignTimeTarget": {
+		"Service": "/n4/Services/ajayurl.service",
+		"EntitySet": "Supplier_bid_table",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/n4/Actions/Supplier_bid_table/NavToSupplier_bid_table_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit"
+			},
+			{
+				"OnPress": "/n4/Rules/Supplier_bid_table/Supplier_bid_table_DeleteConfirmation.js",
+				"Position": "Right",
+				"SystemItem": "Trash"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{item_name}",
+						"Subhead": "{doc_id}",
+						"BodyText": "",
+						"Footnote": "{item_id}",
+						"Description": "{invitationId}",
+						"StatusText": "{supp_quot_price}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{supp_quot_quantity}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "doc_id",
+							"Value": "{doc_id}"
+						},
+						{
+							"KeyName": "invitationId",
+							"Value": "{invitationId}"
+						},
+						{
+							"KeyName": "item_id",
+							"Value": "{item_id}"
+						},
+						{
+							"KeyName": "item_name",
+							"Value": "{item_name}"
+						},
+						{
+							"KeyName": "supp_quot_price",
+							"Value": "{supp_quot_price}"
+						},
+						{
+							"KeyName": "supp_quot_quantity",
+							"Value": "{supp_quot_quantity}"
+						},
+						{
+							"KeyName": "price",
+							"Value": "{price}"
+						},
+						{
+							"KeyName": "quantity",
+							"Value": "{quantity}"
+						},
+						{
+							"KeyName": "status",
+							"Value": "{status}"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Supplier_bid_table_Detail",
+	"PrefersLargeCaption": true
+}

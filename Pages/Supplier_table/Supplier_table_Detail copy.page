@@ -1,0 +1,164 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/n4/Services/ajayurl.service",
+		"EntitySet": "Supplier_table",
+		"QueryOptions": ""
+	},
+	"Controls": [
+		{
+			"DataSubscriptions": [
+				"Supplier_bid_table"
+			],
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable",
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Subhead": "{invitationId}",
+						"Footnote": "{phone_main}",
+						"Description": "{smvendor_id}",
+						"HeadlineText": "{doc_id}",
+						"StatusPosition": "Stacked",
+						"StatusImagePosition": "Leading",
+						"SubstatusImagePosition": "Leading"
+					},
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader0",
+					"Visible": true
+				},
+				{
+					"KeyAndValues": [
+						{
+							"Value": "{doc_id}",
+							"_Name": "KeyValue0",
+							"KeyName": "doc_id",
+							"Visible": true
+						},
+						{
+							"Value": "{invitationId}",
+							"_Name": "KeyValue1",
+							"KeyName": "invitationId",
+							"Visible": true
+						},
+						{
+							"Value": "{smvendor_id}",
+							"_Name": "KeyValue2",
+							"KeyName": "smvendor_id",
+							"Visible": true
+						},
+						{
+							"Value": "{phone_main}",
+							"_Name": "KeyValue3",
+							"KeyName": "phone_main",
+							"Visible": true
+						},
+						{
+							"Value": "{status}",
+							"_Name": "KeyValue4",
+							"KeyName": "status",
+							"Visible": true
+						}
+					],
+					"MaxItemCount": 1,
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Layout": {
+						"NumberOfColumns": 2
+					}
+				},
+				{
+					"Header": {
+						"_Name": "SectionHeader0",
+						"AccessoryType": "None",
+						"UseTopPadding": true,
+						"Caption": "Quotes Bids Line Item"
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"EntitySet": "{@odata.readLink}/supplier_to_sbid",
+						"Service": "/n4/Services/ajayurl.service"
+					},
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
+					"EmptySection": {
+						"Caption": "No record found!",
+						"FooterVisible": false
+					},
+					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true,
+							"LeadingItems": [],
+							"TrailingItems": []
+						},
+						"Title": "{item_name}",
+						"Subhead": "{doc_id}",
+						"Footnote": "{item_id}",
+						"Description": "{invitationId}",
+						"StatusText": "{supp_quot_price}",
+						"SubstatusText": "{supp_quot_quantity}",
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "DisclosureIndicator",
+						"Tags": [],
+						"AvatarStack": {
+							"ImageIsCircular": true,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"ImageIsCircular": true
+						},
+						"OnPress": "/n4/Actions/Supplier_bid_table/NavToSupplier_bid_table_Detail.action",
+						"Selected": false
+					},
+					"HighlightSelectedItem": false
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Supplier_table_Detail",
+	"Caption": "Supplier_table Detail",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "",
+				"SystemItem": "Edit",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"OnPress": "/n4/Actions/Supplier_table/NavToSupplier_table_Edit.action"
+			},
+			{
+				"_Name": "ActionBarItem1",
+				"Caption": "More",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"OnPress": "/n4/Actions/Supplier_table/Supplier_table_DetailPopover.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
+}

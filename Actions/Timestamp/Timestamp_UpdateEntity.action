@@ -1,0 +1,17 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "Timestamp",
+        "Service": "/n4/Services/ajayurl.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "timestamp": "#Control:timestamp/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/n4/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/n4/Actions/UpdateEntityFailureMessage.action"
+}

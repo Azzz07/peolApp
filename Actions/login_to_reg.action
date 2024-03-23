@@ -1,0 +1,8 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"ActionResult": {
+		"_Name": "login_to_reg"
+	},
+	"PageToOpen": "/n4/Pages/Registration.page",
+	"NavigationType": "Inner"
+}

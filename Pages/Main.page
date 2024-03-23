@@ -1,0 +1,132 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": true,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"Target": {
+				"Service": "/n4/Services/ajayurl.service",
+				"EntitySet": "Supplier_table"
+			},
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": false,
+						"HeaderSeparator": false,
+						"FooterSeparator": false,
+						"ControlSeparator": false
+					},
+					"Styles": {
+						"ImageBackgroundColor": "t",
+						"BackgroundColor": "",
+						"Image": ""
+					},
+					"color": "black",
+					"_Type": "Section.Type.Image",
+					"_Name": "SectionImage1",
+					"Visible": true,
+					"Image": "/n4/Images/peol_logo (1).png",
+					"Width": 190,
+					"Height": 190,
+					"Alignment": "Center",
+					"ContentMode": "ScaleToFill",
+					"PaddingTop": 60,
+					"PaddingBottom": 140,
+					"PaddingLeft": 40,
+					"PaddingRight": 40
+				},
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": false,
+						"HeaderSeparator": false,
+						"FooterSeparator": false,
+						"ControlSeparator": false
+					},
+					"Controls": [],
+					"Header": {
+						"Styles": {
+							"Header": "Formm",
+							"Caption": "Formm"
+						},
+						"_Name": "SectionHeader0",
+						"AccessoryType": "None",
+						"UseTopPadding": false,
+						"Caption": "                                PEOL TECHNOLOGIES"
+					},
+					"Visible": true,
+					"EmptySection": {
+						"Caption": "Formm",
+						"FooterVisible": true,
+						"Style": "Formm"
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				},
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": false,
+						"HeaderSeparator": false,
+						"FooterSeparator": false,
+						"ControlSeparator": false
+					},
+					"Controls": [],
+					"Header": {
+						"Styles": {
+							"Caption": "e"
+						},
+						"_Name": "SectionHeader1",
+						"AccessoryType": "None",
+						"UseTopPadding": false,
+						"Caption": "                            Expeditios Business Solutions                            "
+					},
+					"Footer": {
+						"Alignment": "Center",
+						"Styles": {
+							"Footer": "f",
+							"Caption": "f",
+							"AttributeLabel": "f"
+						},
+						"_Name": "SectionFooter0",
+						"Caption": "                                  Get Started",
+						"FooterStyle": "Attribute",
+						"Visible": true,
+						"OnPress": "/n4/Actions/lodg_to_login.action",
+						"UseBottomPadding": false
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell1"
+				}
+			],
+			"LoadingIndicator": {
+				"Enabled": true,
+				"Text": "coming soon"
+			}
+		}
+	],
+	"PullDown": {
+		"Styles": {
+			"BackgroundColor": "#21d61d",
+			"IndicatorColor": "#eaa4a4"
+		}
+	},
+	"DesignTimeTarget": {
+		"Service": "/n4/Services/ajayurl.service",
+		"EntitySet": "Supplier_table"
+	},
+	"_Type": "Page",
+	"_Name": "Page0",
+	"PrefersLargeCaption": true
+}

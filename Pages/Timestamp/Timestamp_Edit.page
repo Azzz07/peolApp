@@ -1,0 +1,46 @@
+{
+	"Caption": "Update Timestamp Detail",
+	"DesignTimeTarget": {
+		"Service": "/n4/Services/ajayurl.service",
+		"EntitySet": "Timestamp",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"OnPress": "/n4/Actions/CloseModalPage_Cancel.action"
+			},
+			{
+				"Position": "Right",
+				"SystemItem": "Save",
+				"OnPress": "/n4/Actions/Timestamp/Timestamp_UpdateEntity.action"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "timestamp",
+							"_Name": "timestamp",
+							"Value": "{timestamp}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Timestamp_Edit",
+	"PrefersLargeCaption": true
+}

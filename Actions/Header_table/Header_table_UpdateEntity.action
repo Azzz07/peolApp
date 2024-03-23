@@ -1,0 +1,19 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "Header_table",
+        "Service": "/n4/Services/ajayurl.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "doc_id": "#Control:doc_id/#Value",
+        "status": "#Control:status/#Value",
+        "date_created": "#Control:date_created/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/n4/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/n4/Actions/UpdateEntityFailureMessage.action"
+}
