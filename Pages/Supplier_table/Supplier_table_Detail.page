@@ -18,9 +18,8 @@
 			"Sections": [
 				{
 					"ObjectHeader": {
-						"Subhead": "{invitationId}",
 						"Description": "{smvendor_id}",
-						"HeadlineText": "{doc_id}",
+						"HeadlineText": "{invitationId}",
 						"StatusPosition": "Stacked",
 						"StatusImagePosition": "Leading",
 						"SubstatusImagePosition": "Leading"
@@ -120,6 +119,7 @@
 						"SubstatusText": "{supp_quot_quantity}",
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "DisclosureIndicator",
+						"AccessoryButtonIcon": "sap-icon://navigation-right-arrow",
 						"Tags": [],
 						"AvatarStack": {
 							"ImageIsCircular": true,
@@ -138,26 +138,6 @@
 	],
 	"_Type": "Page",
 	"_Name": "Supplier_table_Detail",
-	"Caption": "Supplier_table Detail",
-	"PrefersLargeCaption": true,
-	"ActionBar": {
-		"Items": [
-			{
-				"_Name": "ActionBarItem0",
-				"Caption": "",
-				"SystemItem": "Edit",
-				"Position": "Right",
-				"IsIconCircular": false,
-				"OnPress": "/n4/Actions/Supplier_table/NavToSupplier_table_Edit.action"
-			},
-			{
-				"_Name": "ActionBarItem1",
-				"Caption": "More",
-				"Position": "Right",
-				"IsIconCircular": false,
-				"OnPress": "/n4/Actions/Supplier_table/Supplier_table_DetailPopover.action"
-			}
-		],
-		"_Name": "ActionBar1"
-	}
+	"Caption": "Quotes Bids Detail",
+	"PrefersLargeCaption": true
 }

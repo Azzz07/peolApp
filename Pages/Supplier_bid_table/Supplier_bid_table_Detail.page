@@ -1,96 +1,128 @@
 {
-	"Caption": "Supplier_bid_table Detail",
 	"DesignTimeTarget": {
 		"Service": "/n4/Services/ajayurl.service",
 		"EntitySet": "Supplier_bid_table",
 		"QueryOptions": ""
 	},
-	"ActionBar": {
-		"Items": [
-			{
-				"OnPress": "/n4/Actions/Supplier_bid_table/NavToSupplier_bid_table_Edit.action",
-				"Position": "Right",
-				"SystemItem": "Edit"
-			},
-			{
-				"OnPress": "/n4/Rules/Supplier_bid_table/Supplier_bid_table_DeleteConfirmation.js",
-				"Position": "Right",
-				"SystemItem": "Trash"
-			}
-		]
-	},
 	"Controls": [
 		{
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable",
 			"Sections": [
 				{
 					"ObjectHeader": {
-						"Tags": [],
-						"DetailImage": "",
-						"HeadlineText": "{item_name}",
 						"Subhead": "{doc_id}",
-						"BodyText": "",
 						"Footnote": "{item_id}",
 						"Description": "{invitationId}",
 						"StatusText": "{supp_quot_price}",
-						"StatusImage": "",
-						"SubstatusImage": "",
-						"SubstatusText": "{supp_quot_quantity}"
+						"SubstatusText": "{supp_quot_quantity}",
+						"HeadlineText": "{item_name}",
+						"StatusPosition": "Stacked",
+						"StatusImagePosition": "Leading",
+						"SubstatusImagePosition": "Leading"
 					},
-					"_Type": "Section.Type.ObjectHeader"
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader0",
+					"Visible": true
 				},
 				{
 					"KeyAndValues": [
 						{
+							"Value": "{doc_id}",
+							"_Name": "KeyValue0",
 							"KeyName": "doc_id",
-							"Value": "{doc_id}"
+							"Visible": true
 						},
 						{
+							"Value": "{invitationId}",
+							"_Name": "KeyValue1",
 							"KeyName": "invitationId",
-							"Value": "{invitationId}"
+							"Visible": true
 						},
 						{
+							"Value": "{item_id}",
+							"_Name": "KeyValue2",
 							"KeyName": "item_id",
-							"Value": "{item_id}"
+							"Visible": true
 						},
 						{
+							"Value": "{item_name}",
+							"_Name": "KeyValue3",
 							"KeyName": "item_name",
-							"Value": "{item_name}"
+							"Visible": true
 						},
 						{
+							"Value": "{supp_quot_price}",
+							"_Name": "KeyValue4",
 							"KeyName": "supp_quot_price",
-							"Value": "{supp_quot_price}"
+							"Visible": true
 						},
 						{
+							"Value": "{supp_quot_quantity}",
+							"_Name": "KeyValue5",
 							"KeyName": "supp_quot_quantity",
-							"Value": "{supp_quot_quantity}"
+							"Visible": true
 						},
 						{
+							"Value": "{price}",
+							"_Name": "KeyValue6",
 							"KeyName": "price",
-							"Value": "{price}"
+							"Visible": true
 						},
 						{
+							"Value": "{quantity}",
+							"_Name": "KeyValue7",
 							"KeyName": "quantity",
-							"Value": "{quantity}"
+							"Visible": true
 						},
 						{
+							"Value": "{status}",
+							"_Name": "KeyValue8",
 							"KeyName": "status",
-							"Value": "{status}"
+							"Visible": true
 						}
 					],
+					"MaxItemCount": 1,
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
 					"Layout": {
 						"NumberOfColumns": 2
-					},
-					"MaxItemCount": 1,
-					"_Name": "SectionKeyValue0",
-					"_Type": "Section.Type.KeyValue"
+					}
 				}
 			],
-			"DataSubscriptions": [],
-			"_Type": "Control.Type.SectionedTable",
-			"_Name": "SectionedTable"
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			}
 		}
 	],
 	"_Type": "Page",
 	"_Name": "Supplier_bid_table_Detail",
-	"PrefersLargeCaption": true
+	"Caption": "Line Item Detail",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "",
+				"SystemItem": "Edit",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"OnPress": "/n4/Actions/Supplier_bid_table/NavToSupplier_bid_table_Edit.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
 }

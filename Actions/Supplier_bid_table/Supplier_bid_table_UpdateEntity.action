@@ -1,25 +1,25 @@
 {
-    "_Type": "Action.Type.ODataService.UpdateEntity",
-    "Target": {
-        "EntitySet": "Supplier_bid_table",
-        "Service": "/n4/Services/ajayurl.service",
-        "ReadLink": "{@odata.readLink}"
-    },
-    "Properties": {
-        "doc_id": "#Control:doc_id/#SelectedValue",
-        "invitationId": "#Control:invitationId/#Value",
-        "item_id": "#Control:item_id/#Value",
-        "item_name": "#Control:item_name/#Value",
-        "supp_quot_price": "#Control:supp_quot_price/#Value",
-        "supp_quot_quantity": "#Control:supp_quot_quantity/#Value",
-        "price": "#Control:price/#Value",
-        "quantity": "#Control:quantity/#Value",
-        "status": "#Control:status/#Value"
-    },
-    "UpdateLinks": [],
-    "ActionResult": {
-        "_Name": "update"
-    },
-    "OnSuccess": "/n4/Actions/UpdateEntitySuccessMessage.action",
-    "OnFailure": "/n4/Actions/UpdateEntityFailureMessage.action"
+	"_Type": "Action.Type.ODataService.UpdateEntity",
+	"ActionResult": {
+		"_Name": "update"
+	},
+	"OnFailure": "/n4/Actions/UpdateEntityFailureMessage.action",
+	"OnSuccess": "/n4/Actions/UpdateEntitySuccessMessage.action",
+	"ValidationRule": "/n4/Rules/l.js",
+	"Target": {
+		"EntitySet": "Supplier_bid_table",
+		"Service": "/n4/Services/ajayurl.service",
+		"ReadLink": "{@odata.readLink}"
+	},
+	"Properties": {
+		"doc_id": "#Control:doc_id/#SelectedValue",
+		"invitationId": "#Control:invitationId/#Value",
+		"item_id": "#Control:item_id/#Value",
+		"item_name": "#Control:item_name/#Value",
+		"supp_quot_price": "#Control:supp_quot_price/#Value",
+		"supp_quot_quantity": "#Control:supp_quot_quantity/#Value",
+		"price": "#Control:price/#Value",
+		"quantity": "#Control:quantity/#Value",
+		"status": "#Control:status/#Value"
+	}
 }

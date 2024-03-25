@@ -1,6 +1,10 @@
 {
 	"Controls": [
 		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
 			"_Type": "Control.Type.SectionedTable",
 			"_Name": "SectionedTable",
 			"Sections": [
@@ -9,6 +13,13 @@
 						"_Name": "SectionHeader0",
 						"AccessoryType": "None",
 						"UseTopPadding": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
 					},
 					"_Type": "Section.Type.ObjectTable",
 					"Target": {
@@ -22,14 +33,13 @@
 						"Caption": "No record found!",
 						"FooterVisible": false
 					},
-					"Separators": {
-						"TopSectionSeparator": false,
-						"BottomSectionSeparator": true,
-						"HeaderSeparator": true,
-						"FooterSeparator": true,
-						"ControlSeparator": true
-					},
 					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true,
+							"LeadingItems": [],
+							"TrailingItems": []
+						},
 						"Title": "{doc_id}",
 						"Subhead": "{invitationId}",
 						"Description": "{smvendor_id}",
@@ -45,13 +55,7 @@
 							"ImageIsCircular": true
 						},
 						"OnPress": "/n4/Actions/Supplier_table/NavToSupplier_table_Detail.action",
-						"Selected": false,
-						"ContextMenu": {
-							"Items": [],
-							"PerformFirstActionWithFullSwipe": true,
-							"LeadingItems": [],
-							"TrailingItems": []
-						}
+						"Selected": false
 					},
 					"Search": {
 						"Enabled": true,
@@ -70,15 +74,11 @@
 			"LoadingIndicator": {
 				"Enabled": true,
 				"Text": "Loading, please wait..."
-			},
-			"FilterFeedbackBar": {
-				"ShowAllFilters": false,
-				"_Type": "Control.Type.FilterFeedbackBar"
 			}
 		}
 	],
 	"_Type": "Page",
 	"_Name": "Supplier_table_List",
-	"Caption": "Supplier_table",
+	"Caption": "Quotes Bids",
 	"PrefersLargeCaption": true
 }

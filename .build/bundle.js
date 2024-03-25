@@ -123,6 +123,8 @@ let n4_actions_timestamp_timestamp_deleteentity_action = __webpack_require__(/*!
 let n4_actions_timestamp_timestamp_updateentity_action = __webpack_require__(/*! ./n4/Actions/Timestamp/Timestamp_UpdateEntity.action */ "./build.definitions/n4/Actions/Timestamp/Timestamp_UpdateEntity.action")
 let n4_actions_updateentityfailuremessage_action = __webpack_require__(/*! ./n4/Actions/UpdateEntityFailureMessage.action */ "./build.definitions/n4/Actions/UpdateEntityFailureMessage.action")
 let n4_actions_updateentitysuccessmessage_action = __webpack_require__(/*! ./n4/Actions/UpdateEntitySuccessMessage.action */ "./build.definitions/n4/Actions/UpdateEntitySuccessMessage.action")
+let n4_actions_validation_action = __webpack_require__(/*! ./n4/Actions/Validation.action */ "./build.definitions/n4/Actions/Validation.action")
+let n4_actions_validationfailure_action = __webpack_require__(/*! ./n4/Actions/ValidationFailure.action */ "./build.definitions/n4/Actions/ValidationFailure.action")
 let n4_globals_application_appdefinition_version_global = __webpack_require__(/*! ./n4/Globals/Application/AppDefinition_Version.global */ "./build.definitions/n4/Globals/Application/AppDefinition_Version.global")
 let n4_globals_application_applicationname_global = __webpack_require__(/*! ./n4/Globals/Application/ApplicationName.global */ "./build.definitions/n4/Globals/Application/ApplicationName.global")
 let n4_globals_application_supportemail_global = __webpack_require__(/*! ./n4/Globals/Application/SupportEmail.global */ "./build.definitions/n4/Globals/Application/SupportEmail.global")
@@ -149,6 +151,7 @@ let n4_pages_item_table_item_table_create_page = __webpack_require__(/*! ./n4/Pa
 let n4_pages_item_table_item_table_detail_page = __webpack_require__(/*! ./n4/Pages/Item_table/Item_table_Detail.page */ "./build.definitions/n4/Pages/Item_table/Item_table_Detail.page")
 let n4_pages_item_table_item_table_edit_page = __webpack_require__(/*! ./n4/Pages/Item_table/Item_table_Edit.page */ "./build.definitions/n4/Pages/Item_table/Item_table_Edit.page")
 let n4_pages_item_table_item_table_list_page = __webpack_require__(/*! ./n4/Pages/Item_table/Item_table_List.page */ "./build.definitions/n4/Pages/Item_table/Item_table_List.page")
+let n4_pages_m_copy_page = __webpack_require__(/*! ./n4/Pages/M copy.page */ "./build.definitions/n4/Pages/M copy.page")
 let n4_pages_m_page = __webpack_require__(/*! ./n4/Pages/M.page */ "./build.definitions/n4/Pages/M.page")
 let n4_pages_main_page = __webpack_require__(/*! ./n4/Pages/Main.page */ "./build.definitions/n4/Pages/Main.page")
 let n4_pages_registration_page = __webpack_require__(/*! ./n4/Pages/Registration.page */ "./build.definitions/n4/Pages/Registration.page")
@@ -180,6 +183,7 @@ let n4_rules_application_resetappsettingsandlogout_js = __webpack_require__(/*! 
 let n4_rules_bid_reply_bid_reply_deleteconfirmation_js = __webpack_require__(/*! ./n4/Rules/Bid_reply/Bid_reply_DeleteConfirmation.js */ "./build.definitions/n4/Rules/Bid_reply/Bid_reply_DeleteConfirmation.js")
 let n4_rules_header_table_header_table_deleteconfirmation_js = __webpack_require__(/*! ./n4/Rules/Header_table/Header_table_DeleteConfirmation.js */ "./build.definitions/n4/Rules/Header_table/Header_table_DeleteConfirmation.js")
 let n4_rules_item_table_item_table_deleteconfirmation_js = __webpack_require__(/*! ./n4/Rules/Item_table/Item_table_DeleteConfirmation.js */ "./build.definitions/n4/Rules/Item_table/Item_table_DeleteConfirmation.js")
+let n4_rules_l_js = __webpack_require__(/*! ./n4/Rules/l.js */ "./build.definitions/n4/Rules/l.js")
 let n4_rules_logging_loglevels_js = __webpack_require__(/*! ./n4/Rules/Logging/LogLevels.js */ "./build.definitions/n4/Rules/Logging/LogLevels.js")
 let n4_rules_logging_settracecategories_js = __webpack_require__(/*! ./n4/Rules/Logging/SetTraceCategories.js */ "./build.definitions/n4/Rules/Logging/SetTraceCategories.js")
 let n4_rules_logging_setuserloglevel_js = __webpack_require__(/*! ./n4/Rules/Logging/SetUserLogLevel.js */ "./build.definitions/n4/Rules/Logging/SetUserLogLevel.js")
@@ -295,6 +299,8 @@ module.exports = {
 	n4_actions_timestamp_timestamp_updateentity_action : n4_actions_timestamp_timestamp_updateentity_action,
 	n4_actions_updateentityfailuremessage_action : n4_actions_updateentityfailuremessage_action,
 	n4_actions_updateentitysuccessmessage_action : n4_actions_updateentitysuccessmessage_action,
+	n4_actions_validation_action : n4_actions_validation_action,
+	n4_actions_validationfailure_action : n4_actions_validationfailure_action,
 	n4_globals_application_appdefinition_version_global : n4_globals_application_appdefinition_version_global,
 	n4_globals_application_applicationname_global : n4_globals_application_applicationname_global,
 	n4_globals_application_supportemail_global : n4_globals_application_supportemail_global,
@@ -321,6 +327,7 @@ module.exports = {
 	n4_pages_item_table_item_table_detail_page : n4_pages_item_table_item_table_detail_page,
 	n4_pages_item_table_item_table_edit_page : n4_pages_item_table_item_table_edit_page,
 	n4_pages_item_table_item_table_list_page : n4_pages_item_table_item_table_list_page,
+	n4_pages_m_copy_page : n4_pages_m_copy_page,
 	n4_pages_m_page : n4_pages_m_page,
 	n4_pages_main_page : n4_pages_main_page,
 	n4_pages_registration_page : n4_pages_registration_page,
@@ -352,6 +359,7 @@ module.exports = {
 	n4_rules_bid_reply_bid_reply_deleteconfirmation_js : n4_rules_bid_reply_bid_reply_deleteconfirmation_js,
 	n4_rules_header_table_header_table_deleteconfirmation_js : n4_rules_header_table_header_table_deleteconfirmation_js,
 	n4_rules_item_table_item_table_deleteconfirmation_js : n4_rules_item_table_item_table_deleteconfirmation_js,
+	n4_rules_l_js : n4_rules_l_js,
 	n4_rules_logging_loglevels_js : n4_rules_logging_loglevels_js,
 	n4_rules_logging_settracecategories_js : n4_rules_logging_settracecategories_js,
 	n4_rules_logging_setuserloglevel_js : n4_rules_logging_setuserloglevel_js,
@@ -1084,6 +1092,40 @@ function DeleteConfirmation(clientAPI) {
 
 /***/ }),
 
+/***/ "./build.definitions/n4/Rules/l.js":
+/*!*****************************************!*\
+  !*** ./build.definitions/n4/Rules/l.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ l)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+function l(clientAPI) {
+    debugger
+    var amountValue = clientAPI.evaluateTargetPath('#Control:price/#Value');
+    var quantityValue = clientAPI.evaluateTargetPath('#Control:quantity/#Value');
+    var basePrice = clientAPI.evaluateTargetPath('#Control:supp_quot_price/#Value');
+    var bp = parseFloat(basePrice);
+
+    if ((!amountValue || amountValue.trim() === '' || amountValue < bp) || (!quantityValue || quantityValue === '')) {        // If amount value is blank, display a validation failure message
+        clientAPI.executeAction('/n4/Actions/ValidationFailure.action');
+    } else {
+        // If amount value is not blank, return true to indicate validation is successful
+        clientAPI.executeAction('/n4/Pages/Supplier_table/Supplier_table_List.page');
+        // return true;
+    }
+}
+
+
+/***/ }),
+
 /***/ "./build.definitions/n4/Rules/supplier_replay/supplier_replay_DeleteConfirmation.js":
 /*!******************************************************************************************!*\
   !*** ./build.definitions/n4/Rules/supplier_replay/supplier_replay_DeleteConfirmation.js ***!
@@ -1790,13 +1832,23 @@ module.exports = {"Caption":"Item_table","ActionBar":{"Items":[{"OnPress":"/n4/A
 
 /***/ }),
 
+/***/ "./build.definitions/n4/Pages/M copy.page":
+/*!************************************************!*\
+  !*** ./build.definitions/n4/Pages/M copy.page ***!
+  \************************************************/
+/***/ ((module) => {
+
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Layout":{"LayoutType":"Vertical","HorizontalAlignment":"Leading"},"_Type":"Section.Type.ButtonTable","_Name":"SectionButtonTable0","Visible":true,"EmptySection":{"FooterVisible":false},"Buttons":[{"_Name":"SectionButton5","Title":"Quotes Bids","Alignment":"Center","ButtonType":"Text","Semantic":"Tint","Image":"sap-icon://navigation-right-arrow","ImagePosition":"Trailing","FullWidth":false,"Visible":true,"Enabled":true,"OnPress":"/n4/Actions/Supplier_table/NavToSupplier_table_List.action"},{"_Name":"SectionButton3","Title":"Line Item","Alignment":"Center","ButtonType":"Text","Semantic":"Tint","Image":"sap-icon://navigation-right-arrow","ImagePosition":"Trailing","FullWidth":false,"Visible":true,"Enabled":true,"OnPress":"/n4/Actions/Supplier_bid_table/NavToSupplier_bid_table_List.action"}]}]}],"_Type":"Page","_Name":"Main","Caption":"Main","PrefersLargeCaption":true,"ActionBar":{"Items":[{"_Name":"ActionBarItem0","Caption":"User Menu","Icon":"sap-icon://customer","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/n4/Actions/Application/UserMenuPopover.action"}],"_Name":"ActionBar1"}}
+
+/***/ }),
+
 /***/ "./build.definitions/n4/Pages/M.page":
 /*!*******************************************!*\
   !*** ./build.definitions/n4/Pages/M.page ***!
   \*******************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Layout":{"LayoutType":"Vertical","HorizontalAlignment":"Leading"},"_Type":"Section.Type.ButtonTable","_Name":"SectionButtonTable0","Visible":true,"EmptySection":{"FooterVisible":false},"Buttons":[{"_Name":"SectionButton5","Title":"Quotes Bids","Alignment":"Center","ButtonType":"Text","Semantic":"Tint","Image":"sap-icon://navigation-right-arrow","ImagePosition":"Trailing","FullWidth":false,"Visible":true,"Enabled":true,"OnPress":"/n4/Actions/Supplier_table/NavToSupplier_table_List.action"},{"_Name":"SectionButton3","Title":"Supplier_bid_table","Alignment":"Center","ButtonType":"Text","Semantic":"Tint","Image":"sap-icon://navigation-right-arrow","ImagePosition":"Trailing","FullWidth":false,"Visible":true,"Enabled":true,"OnPress":"/n4/Actions/Supplier_bid_table/NavToSupplier_bid_table_List.action"}]}]}],"_Type":"Page","_Name":"Main","Caption":"Main","PrefersLargeCaption":true,"ActionBar":{"Items":[{"_Name":"ActionBarItem0","Caption":"User Menu","Icon":"sap-icon://customer","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/n4/Actions/Application/UserMenuPopover.action"}],"_Name":"ActionBar1"}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Layout":{"LayoutType":"Vertical","HorizontalAlignment":"Leading"},"_Type":"Section.Type.ButtonTable","_Name":"SectionButtonTable0","Visible":true,"EmptySection":{"FooterVisible":false},"Buttons":[{"_Name":"SectionButton5","Title":"Quotes Bids","Alignment":"Center","ButtonType":"Text","Semantic":"Tint","Image":"sap-icon://navigation-right-arrow","ImagePosition":"Trailing","FullWidth":false,"Visible":true,"Enabled":true,"OnPress":"/n4/Actions/Supplier_table/NavToSupplier_table_List.action"}]}]}],"_Type":"Page","_Name":"Main","Caption":"Main","PrefersLargeCaption":true,"ActionBar":{"Items":[{"_Name":"ActionBarItem0","Caption":"User Menu","Icon":"sap-icon://customer","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/n4/Actions/Application/UserMenuPopover.action"}],"_Name":"ActionBar1"}}
 
 /***/ }),
 
@@ -1836,7 +1888,7 @@ module.exports = {"ActionBar":{"Items":[{"OnPress":"/n4/Actions/CloseModalPage_C
   \**************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Caption":"Supplier_bid_table Detail","DesignTimeTarget":{"Service":"/n4/Services/ajayurl.service","EntitySet":"Supplier_bid_table","QueryOptions":""},"ActionBar":{"Items":[{"OnPress":"/n4/Actions/Supplier_bid_table/NavToSupplier_bid_table_Edit.action","Position":"Right","SystemItem":"Edit"},{"OnPress":"/n4/Rules/Supplier_bid_table/Supplier_bid_table_DeleteConfirmation.js","Position":"Right","SystemItem":"Trash"}]},"Controls":[{"Sections":[{"ObjectHeader":{"Tags":[],"DetailImage":"","HeadlineText":"{item_name}","Subhead":"{doc_id}","BodyText":"","Footnote":"{item_id}","Description":"{invitationId}","StatusText":"{supp_quot_price}","StatusImage":"","SubstatusImage":"","SubstatusText":"{supp_quot_quantity}"},"_Type":"Section.Type.ObjectHeader"},{"KeyAndValues":[{"KeyName":"doc_id","Value":"{doc_id}"},{"KeyName":"invitationId","Value":"{invitationId}"},{"KeyName":"item_id","Value":"{item_id}"},{"KeyName":"item_name","Value":"{item_name}"},{"KeyName":"supp_quot_price","Value":"{supp_quot_price}"},{"KeyName":"supp_quot_quantity","Value":"{supp_quot_quantity}"},{"KeyName":"price","Value":"{price}"},{"KeyName":"quantity","Value":"{quantity}"},{"KeyName":"status","Value":"{status}"}],"Layout":{"NumberOfColumns":2},"MaxItemCount":1,"_Name":"SectionKeyValue0","_Type":"Section.Type.KeyValue"}],"DataSubscriptions":[],"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable"}],"_Type":"Page","_Name":"Supplier_bid_table_Detail","PrefersLargeCaption":true}
+module.exports = {"DesignTimeTarget":{"Service":"/n4/Services/ajayurl.service","EntitySet":"Supplier_bid_table","QueryOptions":""},"Controls":[{"DataSubscriptions":[],"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable","Sections":[{"ObjectHeader":{"Subhead":"{doc_id}","Footnote":"{item_id}","Description":"{invitationId}","StatusText":"{supp_quot_price}","SubstatusText":"{supp_quot_quantity}","HeadlineText":"{item_name}","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"KeyAndValues":[{"Value":"{doc_id}","_Name":"KeyValue0","KeyName":"doc_id","Visible":true},{"Value":"{invitationId}","_Name":"KeyValue1","KeyName":"invitationId","Visible":true},{"Value":"{item_id}","_Name":"KeyValue2","KeyName":"item_id","Visible":true},{"Value":"{item_name}","_Name":"KeyValue3","KeyName":"item_name","Visible":true},{"Value":"{supp_quot_price}","_Name":"KeyValue4","KeyName":"supp_quot_price","Visible":true},{"Value":"{supp_quot_quantity}","_Name":"KeyValue5","KeyName":"supp_quot_quantity","Visible":true},{"Value":"{price}","_Name":"KeyValue6","KeyName":"price","Visible":true},{"Value":"{quantity}","_Name":"KeyValue7","KeyName":"quantity","Visible":true},{"Value":"{status}","_Name":"KeyValue8","KeyName":"status","Visible":true}],"MaxItemCount":1,"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue0","Visible":true,"EmptySection":{"FooterVisible":false},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Layout":{"NumberOfColumns":2}}],"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"}}],"_Type":"Page","_Name":"Supplier_bid_table_Detail","Caption":"Line Item Detail","PrefersLargeCaption":true,"ActionBar":{"Items":[{"_Name":"ActionBarItem0","Caption":"","SystemItem":"Edit","Position":"Right","IsIconCircular":false,"OnPress":"/n4/Actions/Supplier_bid_table/NavToSupplier_bid_table_Edit.action"}],"_Name":"ActionBar1"}}
 
 /***/ }),
 
@@ -1846,7 +1898,7 @@ module.exports = {"Caption":"Supplier_bid_table Detail","DesignTimeTarget":{"Ser
   \************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Caption":"Update Supplier_bid_table Detail","DesignTimeTarget":{"Service":"/n4/Services/ajayurl.service","EntitySet":"Supplier_bid_table","QueryOptions":""},"ActionBar":{"Items":[{"Position":"Left","SystemItem":"Cancel","OnPress":"/n4/Actions/CloseModalPage_Cancel.action"},{"Position":"Right","SystemItem":"Save","OnPress":"/n4/Actions/Supplier_bid_table/Supplier_bid_table_UpdateEntity.action"}]},"Controls":[{"Sections":[{"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0","Visible":true,"Controls":[{"Caption":"doc_id","AllowMultipleSelection":false,"AllowEmptySelection":true,"IsPickerDismissedOnSelection":true,"IsSelectedSectionEnabled":true,"PickerItems":{"DisplayValue":"{doc_id}","ReturnValue":"{doc_id}","Target":{"EntitySet":"Header_table","Service":"/n4/Services/ajayurl.service"}},"Value":"{doc_id}","_Name":"doc_id","_Type":"Control.Type.FormCell.ListPicker","IsEditable":false},{"Caption":"invitationId","_Name":"invitationId","Value":"{invitationId}","_Type":"Control.Type.FormCell.SimpleProperty","IsEditable":false},{"Caption":"item_id","_Name":"item_id","Value":"{item_id}","_Type":"Control.Type.FormCell.SimpleProperty","IsEditable":false},{"Caption":"item_name","_Name":"item_name","Value":"{item_name}","_Type":"Control.Type.FormCell.SimpleProperty"},{"Caption":"supp_quot_price","_Name":"supp_quot_price","Value":"{supp_quot_price}","_Type":"Control.Type.FormCell.SimpleProperty"},{"Caption":"supp_quot_quantity","_Name":"supp_quot_quantity","Value":"{supp_quot_quantity}","_Type":"Control.Type.FormCell.SimpleProperty"},{"Caption":"price","_Name":"price","Value":"{price}","KeyboardType":"Number","_Type":"Control.Type.FormCell.SimpleProperty"},{"Caption":"quantity","_Name":"quantity","Value":"{quantity}","KeyboardType":"Number","_Type":"Control.Type.FormCell.SimpleProperty"},{"Caption":"status","_Name":"status","Value":"{status}","_Type":"Control.Type.FormCell.SimpleProperty"}]}],"_Name":"SectionedTable0","_Type":"Control.Type.SectionedTable"}],"_Type":"Page","_Name":"Supplier_bid_table_Edit","PrefersLargeCaption":true}
+module.exports = {"DesignTimeTarget":{"Service":"/n4/Services/ajayurl.service","EntitySet":"Supplier_bid_table","QueryOptions":""},"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Controls":[{"Value":"{doc_id}","_Type":"Control.Type.FormCell.ListPicker","_Name":"doc_id","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Doc Id","IsSelectedSectionEnabled":true,"IsPickerDismissedOnSelection":true,"AllowDefaultValueIfOneItem":false,"IsEditable":false,"PickerItems":{"DisplayValue":"{doc_id}","ReturnValue":"{doc_id}","Target":{"EntitySet":"Header_table","Service":"/n4/Services/ajayurl.service"}}},{"Value":"{invitationId}","_Type":"Control.Type.FormCell.SimpleProperty","_Name":"invitationId","IsVisible":true,"Separator":true,"Caption":"Invitation Id","Enabled":false,"IsEditable":false},{"Value":"{item_id}","_Type":"Control.Type.FormCell.SimpleProperty","_Name":"item_id","IsVisible":true,"Separator":true,"Caption":"Item Id","Enabled":false,"IsEditable":false},{"Value":"{item_name}","_Type":"Control.Type.FormCell.SimpleProperty","_Name":"item_name","IsVisible":true,"Separator":true,"Caption":"Item Name","Enabled":false,"IsEditable":true},{"Value":"{supp_quot_price}","_Type":"Control.Type.FormCell.SimpleProperty","_Name":"supp_quot_price","IsVisible":true,"Separator":true,"Caption":"Base Price","Enabled":true,"IsEditable":false},{"Value":"{supp_quot_quantity}","_Type":"Control.Type.FormCell.SimpleProperty","_Name":"supp_quot_quantity","IsVisible":true,"Separator":true,"Caption":"Min Quantity","Enabled":true,"IsEditable":false},{"Value":"{price}","_Type":"Control.Type.FormCell.SimpleProperty","_Name":"price","IsVisible":true,"Separator":true,"Caption":"price*","KeyboardType":"Number","Enabled":true,"IsEditable":true},{"Value":"{quantity}","_Type":"Control.Type.FormCell.SimpleProperty","_Name":"quantity","IsVisible":true,"Separator":true,"Caption":"quantity*","KeyboardType":"Number","Enabled":true,"IsEditable":true},{"Value":"{status}","_Type":"Control.Type.FormCell.SimpleProperty","_Name":"status","IsVisible":true,"Separator":true,"Caption":"status","Enabled":true,"IsEditable":false}],"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"}]}],"_Type":"Page","_Name":"Supplier_bid_table_Edit","Caption":"Update ","PrefersLargeCaption":true,"ActionBar":{"Items":[{"_Name":"ActionBarItem0","Caption":"","SystemItem":"Cancel","Position":"Left","IsIconCircular":false,"OnPress":"/n4/Actions/CloseModalPage_Cancel.action"},{"_Name":"ActionBarItem1","Caption":"","SystemItem":"Save","Position":"Right","IsIconCircular":false,"OnPress":"/n4/Actions/Supplier_bid_table/Supplier_bid_table_UpdateEntity.action"}],"_Name":"ActionBar1"}}
 
 /***/ }),
 
@@ -1896,7 +1948,7 @@ module.exports = {"DesignTimeTarget":{"Service":"/n4/Services/ajayurl.service","
   \******************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"DesignTimeTarget":{"Service":"/n4/Services/ajayurl.service","EntitySet":"Supplier_table","QueryOptions":""},"Controls":[{"DataSubscriptions":["Supplier_bid_table"],"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable","Sections":[{"ObjectHeader":{"Subhead":"{invitationId}","Description":"{smvendor_id}","HeadlineText":"{doc_id}","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"KeyAndValues":[{"Value":"{doc_id}","_Name":"KeyValue0","KeyName":"doc_id","Visible":true},{"Value":"{invitationId}","_Name":"KeyValue1","KeyName":"invitationId","Visible":true},{"Value":"{smvendor_id}","_Name":"KeyValue2","KeyName":"smvendor_id","Visible":true},{"Value":"{phone_main}","_Name":"KeyValue3","KeyName":"phone_main","Visible":true},{"Value":"{status}","_Name":"KeyValue4","KeyName":"status","Visible":true}],"MaxItemCount":1,"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue0","Visible":true,"EmptySection":{"FooterVisible":false},"Layout":{"NumberOfColumns":2}},{"Header":{"_Name":"SectionHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Quotes Bids Line Item"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ObjectTable","Target":{"EntitySet":"{@odata.readLink}/supplier_to_sbid","Service":"/n4/Services/ajayurl.service"},"_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No record found!","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[]},"Title":"{item_name}","Subhead":"{doc_id}","Footnote":"{item_id}","Description":"{invitationId}","StatusText":"{supp_quot_price}","SubstatusText":"{supp_quot_quantity}","PreserveIconStackSpacing":false,"AccessoryType":"DisclosureIndicator","Tags":[],"AvatarStack":{"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"ImageIsCircular":true},"OnPress":"/n4/Actions/Supplier_bid_table/NavToSupplier_bid_table_Detail.action","Selected":false},"HighlightSelectedItem":false}]}],"_Type":"Page","_Name":"Supplier_table_Detail","Caption":"Supplier_table Detail","PrefersLargeCaption":true,"ActionBar":{"Items":[{"_Name":"ActionBarItem0","Caption":"","SystemItem":"Edit","Position":"Right","IsIconCircular":false,"OnPress":"/n4/Actions/Supplier_table/NavToSupplier_table_Edit.action"},{"_Name":"ActionBarItem1","Caption":"More","Position":"Right","IsIconCircular":false,"OnPress":"/n4/Actions/Supplier_table/Supplier_table_DetailPopover.action"}],"_Name":"ActionBar1"}}
+module.exports = {"DesignTimeTarget":{"Service":"/n4/Services/ajayurl.service","EntitySet":"Supplier_table","QueryOptions":""},"Controls":[{"DataSubscriptions":["Supplier_bid_table"],"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable","Sections":[{"ObjectHeader":{"Description":"{smvendor_id}","HeadlineText":"{invitationId}","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"KeyAndValues":[{"Value":"{doc_id}","_Name":"KeyValue0","KeyName":"doc_id","Visible":true},{"Value":"{invitationId}","_Name":"KeyValue1","KeyName":"invitationId","Visible":true},{"Value":"{smvendor_id}","_Name":"KeyValue2","KeyName":"smvendor_id","Visible":true},{"Value":"{phone_main}","_Name":"KeyValue3","KeyName":"phone_main","Visible":true},{"Value":"{status}","_Name":"KeyValue4","KeyName":"status","Visible":true}],"MaxItemCount":1,"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue0","Visible":true,"EmptySection":{"FooterVisible":false},"Layout":{"NumberOfColumns":2}},{"Header":{"_Name":"SectionHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Quotes Bids Line Item"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ObjectTable","Target":{"EntitySet":"{@odata.readLink}/supplier_to_sbid","Service":"/n4/Services/ajayurl.service"},"_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No record found!","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[]},"Title":"{item_name}","Subhead":"{doc_id}","Footnote":"{item_id}","Description":"{invitationId}","StatusText":"{supp_quot_price}","SubstatusText":"{supp_quot_quantity}","PreserveIconStackSpacing":false,"AccessoryType":"DisclosureIndicator","AccessoryButtonIcon":"sap-icon://navigation-right-arrow","Tags":[],"AvatarStack":{"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"ImageIsCircular":true},"OnPress":"/n4/Actions/Supplier_bid_table/NavToSupplier_bid_table_Detail.action","Selected":false},"HighlightSelectedItem":false}]}],"_Type":"Page","_Name":"Supplier_table_Detail","Caption":"Quotes Bids Detail","PrefersLargeCaption":true}
 
 /***/ }),
 
@@ -1916,7 +1968,7 @@ module.exports = {"Caption":"Update Supplier_table Detail","DesignTimeTarget":{"
   \****************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable","Sections":[{"Header":{"_Name":"SectionHeader0","AccessoryType":"None","UseTopPadding":false},"_Type":"Section.Type.ObjectTable","Target":{"EntitySet":"Supplier_table","Service":"/n4/Services/ajayurl.service","QueryOptions":""},"_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No record found!","FooterVisible":false},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"ObjectCell":{"Title":"{doc_id}","Subhead":"{invitationId}","Description":"{smvendor_id}","PreserveIconStackSpacing":false,"AccessoryType":"DisclosureIndicator","AccessoryButtonIcon":"sap-icon://navigation-right-arrow","Tags":[],"AvatarStack":{"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"ImageIsCircular":true},"OnPress":"/n4/Actions/Supplier_table/NavToSupplier_table_Detail.action","Selected":false,"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[]}},"Search":{"Enabled":true,"Placeholder":"Item Search","BarcodeScanner":true,"Delay":500,"MinimumCharacterThreshold":3},"DataPaging":{"ShowLoadingIndicator":true,"LoadingIndicatorText":"Loading more items, please wait..."},"HighlightSelectedItem":false}],"LoadingIndicator":{"Enabled":true,"Text":"Loading, please wait..."},"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"}}],"_Type":"Page","_Name":"Supplier_table_List","Caption":"Supplier_table","PrefersLargeCaption":true,"ActionBar":{"Items":[{"_Name":"ActionBarItem0","Caption":"","SystemItem":"Add","Position":"Right","IsIconCircular":false,"OnPress":"/n4/Actions/Supplier_table/NavToSupplier_table_Create.action"}],"_Name":"ActionBar1"}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable","Sections":[{"Header":{"_Name":"SectionHeader0","AccessoryType":"None","UseTopPadding":false},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ObjectTable","Target":{"EntitySet":"Supplier_table","Service":"/n4/Services/ajayurl.service","QueryOptions":""},"_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No record found!","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[]},"Title":"{doc_id}","Subhead":"{invitationId}","Description":"{smvendor_id}","PreserveIconStackSpacing":false,"AccessoryType":"DisclosureIndicator","AccessoryButtonIcon":"sap-icon://navigation-right-arrow","Tags":[],"AvatarStack":{"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"ImageIsCircular":true},"OnPress":"/n4/Actions/Supplier_table/NavToSupplier_table_Detail.action","Selected":false},"Search":{"Enabled":true,"Placeholder":"Item Search","BarcodeScanner":true,"Delay":500,"MinimumCharacterThreshold":3},"DataPaging":{"ShowLoadingIndicator":true,"LoadingIndicatorText":"Loading more items, please wait..."},"HighlightSelectedItem":false}],"LoadingIndicator":{"Enabled":true,"Text":"Loading, please wait..."}}],"_Type":"Page","_Name":"Supplier_table_List","Caption":"Quotes Bids","PrefersLargeCaption":true}
 
 /***/ }),
 
@@ -2676,7 +2728,7 @@ module.exports = {"Target":{"EntitySet":"Supplier_bid_table","Service":"/n4/Serv
   \************************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"_Type":"Action.Type.ODataService.UpdateEntity","Target":{"EntitySet":"Supplier_bid_table","Service":"/n4/Services/ajayurl.service","ReadLink":"{@odata.readLink}"},"Properties":{"doc_id":"#Control:doc_id/#SelectedValue","invitationId":"#Control:invitationId/#Value","item_id":"#Control:item_id/#Value","item_name":"#Control:item_name/#Value","supp_quot_price":"#Control:supp_quot_price/#Value","supp_quot_quantity":"#Control:supp_quot_quantity/#Value","price":"#Control:price/#Value","quantity":"#Control:quantity/#Value","status":"#Control:status/#Value"},"UpdateLinks":[],"ActionResult":{"_Name":"update"},"OnSuccess":"/n4/Actions/UpdateEntitySuccessMessage.action","OnFailure":"/n4/Actions/UpdateEntityFailureMessage.action"}
+module.exports = {"_Type":"Action.Type.ODataService.UpdateEntity","ActionResult":{"_Name":"update"},"OnFailure":"/n4/Actions/UpdateEntityFailureMessage.action","OnSuccess":"/n4/Actions/UpdateEntitySuccessMessage.action","ValidationRule":"/n4/Rules/l.js","Target":{"EntitySet":"Supplier_bid_table","Service":"/n4/Services/ajayurl.service","ReadLink":"{@odata.readLink}"},"Properties":{"doc_id":"#Control:doc_id/#SelectedValue","invitationId":"#Control:invitationId/#Value","item_id":"#Control:item_id/#Value","item_name":"#Control:item_name/#Value","supp_quot_price":"#Control:supp_quot_price/#Value","supp_quot_quantity":"#Control:supp_quot_quantity/#Value","price":"#Control:price/#Value","quantity":"#Control:quantity/#Value","status":"#Control:status/#Value"}}
 
 /***/ }),
 
@@ -2867,6 +2919,26 @@ module.exports = {"Message":"Update entity failure - {#ActionResults:update/erro
 /***/ ((module) => {
 
 module.exports = {"Animated":true,"Duration":2,"Message":"Entity updated","Icon":"","IsIconHidden":false,"NumberOfLines":2,"OnSuccess":"/n4/Actions/CloseModalPage_Complete.action","_Type":"Action.Type.ToastMessage"}
+
+/***/ }),
+
+/***/ "./build.definitions/n4/Actions/Validation.action":
+/*!********************************************************!*\
+  !*** ./build.definitions/n4/Actions/Validation.action ***!
+  \********************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.Navigation","ActionResult":{"_Name":"Validation"}}
+
+/***/ }),
+
+/***/ "./build.definitions/n4/Actions/ValidationFailure.action":
+/*!***************************************************************!*\
+  !*** ./build.definitions/n4/Actions/ValidationFailure.action ***!
+  \***************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.Message","ActionResult":{"_Name":"ValidationFailure"},"Message":"*Fill The  Mandatory Fields  / Price Must Be >= Base Price*","Title":"Required Field","OKCaption":"OK"}
 
 /***/ }),
 

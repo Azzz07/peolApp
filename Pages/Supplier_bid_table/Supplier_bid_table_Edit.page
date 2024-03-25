@@ -1,38 +1,33 @@
 {
-	"Caption": "Update Supplier_bid_table Detail",
 	"DesignTimeTarget": {
 		"Service": "/n4/Services/ajayurl.service",
 		"EntitySet": "Supplier_bid_table",
 		"QueryOptions": ""
 	},
-	"ActionBar": {
-		"Items": [
-			{
-				"Position": "Left",
-				"SystemItem": "Cancel",
-				"OnPress": "/n4/Actions/CloseModalPage_Cancel.action"
-			},
-			{
-				"Position": "Right",
-				"SystemItem": "Save",
-				"OnPress": "/n4/Actions/Supplier_bid_table/Supplier_bid_table_UpdateEntity.action"
-			}
-		]
-	},
 	"Controls": [
 		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
 			"Sections": [
 				{
-					"_Type": "Section.Type.FormCell",
-					"_Name": "SectionFormCell0",
-					"Visible": true,
 					"Controls": [
 						{
-							"Caption": "doc_id",
+							"Value": "{doc_id}",
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "doc_id",
+							"IsVisible": true,
+							"Separator": true,
 							"AllowMultipleSelection": false,
 							"AllowEmptySelection": true,
-							"IsPickerDismissedOnSelection": true,
+							"Caption": "Doc Id",
 							"IsSelectedSectionEnabled": true,
+							"IsPickerDismissedOnSelection": true,
+							"AllowDefaultValueIfOneItem": false,
+							"IsEditable": false,
 							"PickerItems": {
 								"DisplayValue": "{doc_id}",
 								"ReturnValue": "{doc_id}",
@@ -40,72 +35,131 @@
 									"EntitySet": "Header_table",
 									"Service": "/n4/Services/ajayurl.service"
 								}
-							},
-							"Value": "{doc_id}",
-							"_Name": "doc_id",
-							"_Type": "Control.Type.FormCell.ListPicker",
-							"IsEditable": false
+							}
 						},
 						{
-							"Caption": "invitationId",
-							"_Name": "invitationId",
 							"Value": "{invitationId}",
 							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "invitationId",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Invitation Id",
+							"Enabled": false,
 							"IsEditable": false
 						},
 						{
-							"Caption": "item_id",
-							"_Name": "item_id",
 							"Value": "{item_id}",
 							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "item_id",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Item Id",
+							"Enabled": false,
 							"IsEditable": false
 						},
 						{
-							"Caption": "item_name",
-							"_Name": "item_name",
 							"Value": "{item_name}",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "item_name",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Item Name",
+							"Enabled": false,
+							"IsEditable": true
 						},
 						{
-							"Caption": "supp_quot_price",
-							"_Name": "supp_quot_price",
 							"Value": "{supp_quot_price}",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "supp_quot_price",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Base Price",
+							"Enabled": true,
+							"IsEditable": false
 						},
 						{
-							"Caption": "supp_quot_quantity",
-							"_Name": "supp_quot_quantity",
 							"Value": "{supp_quot_quantity}",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "supp_quot_quantity",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Min Quantity",
+							"Enabled": true,
+							"IsEditable": false
 						},
 						{
-							"Caption": "price",
-							"_Name": "price",
 							"Value": "{price}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "price",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "price*",
 							"KeyboardType": "Number",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"Enabled": true,
+							"IsEditable": true
 						},
 						{
-							"Caption": "quantity",
-							"_Name": "quantity",
 							"Value": "{quantity}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "quantity",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "quantity*",
 							"KeyboardType": "Number",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"Enabled": true,
+							"IsEditable": true
 						},
 						{
-							"Caption": "status",
-							"_Name": "status",
 							"Value": "{status}",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "status",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "status",
+							"Enabled": true,
+							"IsEditable": false
 						}
-					]
+					],
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
 				}
-			],
-			"_Name": "SectionedTable0",
-			"_Type": "Control.Type.SectionedTable"
+			]
 		}
 	],
 	"_Type": "Page",
 	"_Name": "Supplier_bid_table_Edit",
-	"PrefersLargeCaption": true
+	"Caption": "Update ",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "",
+				"SystemItem": "Cancel",
+				"Position": "Left",
+				"IsIconCircular": false,
+				"OnPress": "/n4/Actions/CloseModalPage_Cancel.action"
+			},
+			{
+				"_Name": "ActionBarItem1",
+				"Caption": "",
+				"SystemItem": "Save",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"OnPress": "/n4/Actions/Supplier_bid_table/Supplier_bid_table_UpdateEntity.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
 }

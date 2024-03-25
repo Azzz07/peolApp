@@ -39,6 +39,19 @@
 							"Visible": true,
 							"Enabled": true,
 							"OnPress": "/n4/Actions/Supplier_table/NavToSupplier_table_List.action"
+						},
+						{
+							"_Name": "SectionButton3",
+							"Title": "Line Item",
+							"Alignment": "Center",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"Image": "sap-icon://navigation-right-arrow",
+							"ImagePosition": "Trailing",
+							"FullWidth": false,
+							"Visible": true,
+							"Enabled": true,
+							"OnPress": "/n4/Actions/Supplier_bid_table/NavToSupplier_bid_table_List.action"
 						}
 					]
 				}

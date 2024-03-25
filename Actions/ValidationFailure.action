@@ -1,0 +1,9 @@
+{
+	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "ValidationFailure"
+	},
+	"Message": "*Fill The  Mandatory Fields  / Price Must Be >= Base Price*",
+	"Title": "Required Field",
+	"OKCaption": "OK"
+}
